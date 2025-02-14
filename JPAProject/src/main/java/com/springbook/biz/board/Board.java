@@ -9,10 +9,10 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
-@Table(name = "BOARD")
+@Entity // 특정 클래스를 JPA가 관리하는 엔티티 클래스로 인식하는 가장 중요 어노테이션
+@Table(name = "BOARD") // 매핑되는 테이블 이름 지정
 public class Board {
-	@Id
+	@Id // 식별자 필드, PK
 	@GeneratedValue
 	private int seq;
 	
