@@ -18,11 +18,13 @@
             <property name="javax.persistence.jdbc.password" value=""/> <!-- 데이터베이스의 비밀번호 -->
 
             <!-- Hibernate 설정 -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" /> <!-- H2 DB Dialect 클래스 -->
             <property name="hibernate.show_sql" value="true"/>  <!-- SQL 출력 -->
             <property name="hibernate.format_sql" value="true"/> <!-- SQL 예쁘게 출력 -->
             <property name="hibernate.hbm2ddl.auto" value="create"/> <!-- 테이블 자동 생성(update, create, none) -->
             <property name="hibernate.use_sql_comments" value="false" /> <!-- SQL 쿼리에 주석을 추가 -->
             <property name="hibernate.id.new_generator_mappings" value="true" /> <!-- 최신 ID 생성 전략 사용, true 기본값 -->
+
         </properties>
     </persistence-unit>
 
